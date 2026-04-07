@@ -74,7 +74,7 @@ export type SiteContent = {
   resumePdf: string
 }
 
-const resumePdf = '/files/ryan-hassell-resume.pdf'
+const resumePdf = '/files/ryan-hassell-public-resume.pdf'
 
 export const siteContent: SiteContent = {
   profile: {

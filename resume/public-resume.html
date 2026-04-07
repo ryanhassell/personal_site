@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ryan Hassell Resume</title>
+    <style>
+      :root {
+        color-scheme: only light;
+        --paper: #ffffff;
+        --ink: #151311;
+        --muted: #5f5952;
+        --rule: #cfc5ba;
+        --accent: #6f4a33;
+      }
+
+      @page {
+        size: letter;
+        margin: 0.42in 0.5in;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.28;
+      }
+
+      main {
+        width: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .header {
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--ink);
+      }
+
+      .name {
+        font-size: 27px;
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: 11.2px;
+      }
+
+      .contact span::after {
+        content: "|";
+        margin-left: 8px;
+        color: var(--rule);
+      }
+
+      .contact span:last-child::after {
+        content: "";
+        margin: 0;
+      }
+
+      section {
+        margin-top: 11px;
+      }
+
+      .section-title {
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--rule);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .entry {
+        margin-top: 8px;
+      }
+
+      .entry-header,
+      .entry-subhead {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .entry-title {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .entry-date,
+      .entry-meta {
+        font-size: 11.1px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .entry-org {
+        font-size: 11.8px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin-top: 4px;
+        padding-left: 16px;
+      }
+
+      li {
+        margin-top: 2px;
+        font-size: 11.2px;
+      }
+
+      .tech {
+        margin-top: 3px;
+        font-size: 11px;
+      }
+
+      .grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .skills p {
+        margin-top: 5px;
+        font-size: 11.2px;
+      }
+
+      .skills strong,
+      .tech strong {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="name">Ryan Hassell</h1>
+        <div class="contact">
+          <span>Philadelphia, PA</span>
+          <span><a href="mailto:ryanhassell03@gmail.com">ryanhassell03@gmail.com</a></span>
+          <span>
+            <a href="https://www.linkedin.com/in/ryan-hassell-4743211a4/">
+              linkedin.com/in/ryan-hassell-4743211a4
+            </a>
+          </span>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="section-title">Professional Experience</h2>
+
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Associate Software Engineer - Advanced Artificial Intelligence</h3>
+            <p class="entry-date">June 2025 - Present</p>
+          </div>
+          <div class="entry-subhead">
+            <p class="entry-org">Cobbs Creek Healthcare</p>
+            <p class="entry-meta">Newtown Square, PA</p>
+          </div>
+          <ul>
+            <li>
+              Developed a production-grade AI analytics chatbot supporting natural language
+              querying over 10+ enterprise datasets, generating 25+ visualization types with
+              contextual memory.
+            </li>
+            <li>
+              Built multi-agent AI workflows using LangChain and LangFlow for retrieval, SQL
+              planning, visualization selection, and explanation across end-to-end analytics
+              pipelines.
+            </li>
+            <li>
+              Designed LLM-driven literature review generators and interactive analytics
+              dashboards backed by AWS, Azure, Snowflake, and Databricks.
+            </li>
+            <li>
+              Collaborated with clinicians and data scientists to integrate agentic AI systems
+              into live research and analytics workflows.
+            </li>
+          </ul>
+          <p class="tech">
+            <strong>Tech Stack:</strong> Python, TypeScript, JavaScript, SQL, LangChain,
+            LangFlow, FastAPI, React, Streamlit, R Shiny, Plotly, AWS, Azure, Snowflake,
+            Databricks
+          </p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Software Engineer Intern</h3>
+            <p class="entry-date">June 2023 - June 2024</p>
+          </div>
+          <div class="entry-subhead">
+            <p class="entry-org">Insomniac Design</p>
+            <p class="entry-meta">Washington, D.C.</p>
+          </div>
+          <ul>
+            <li>
+              Led backend user and data management architecture for the NZDPU platform, enabling
+              secure emissions data exchange for 380+ organizations.
+            </li>
+            <li>
+              Engineered RESTful APIs, custom user and file management systems, RBAC, and Firebase
+              Authentication across 197+ jurisdictions, scaling to 1,000+ accounts.
+            </li>
+            <li>
+              Optimized SQL queries for 2M+ records, reduced manual workflows by 40%, and ensured
+              compliance across 11 industries using GCP.
+            </li>
+          </ul>
+          <p class="tech">
+            <strong>Tech Stack:</strong> Python, JavaScript, SQL, FastAPI, Firebase, GCP
+          </p>
+        </article>
+      </section>
+
+      <section class="grid-two">
+        <div>
+          <h2 class="section-title">Education</h2>
+          <article class="entry">
+            <div class="entry-header">
+              <h3 class="entry-title">Saint Joseph's University</h3>
+              <p class="entry-date">May 2025</p>
+            </div>
+            <div class="entry-subhead">
+              <p class="entry-org">BS in Computer Science</p>
+              <p class="entry-meta">Philadelphia, PA</p>
+            </div>
+          </article>
+        </div>
+
+        <div>
+          <h2 class="section-title">Leadership</h2>
+          <article class="entry">
+            <div class="entry-header">
+              <h3 class="entry-title">Founder &amp; President</h3>
+              <p class="entry-date">2022 - 2025</p>
+            </div>
+            <div class="entry-subhead">
+              <p class="entry-org">Computer Science Club, Saint Joseph's University</p>
+            </div>
+            <ul>
+              <li>
+                Recruited 60+ members and organized workshops, guest lectures, and coding
+                competitions.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Projects</h2>
+
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Virtual Travel Platform</h3>
+            <p class="entry-date">Cobbs Creek Healthcare</p>
+          </div>
+          <p class="entry-org">Flutter, Python, Firebase, Agora SDK</p>
+          <ul>
+            <li>
+              Built a real-time global travel app with live guides, using Agora for video and
+              Firebase for messaging and authentication.
+            </li>
+            <li>
+              Developed cross-platform client/server architecture and designed upcoming
+              LLM-driven personalization features.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Data Chatbot Interface</h3>
+            <p class="entry-date">Cobbs Creek Healthcare</p>
+          </div>
+          <p class="entry-org">Python, React, OpenAI API, SQL, LangChain, LangFlow, Plotly</p>
+          <ul>
+            <li>
+              Developed a multi-agent LLM architecture for autonomous SQL query planning, data
+              retrieval, visualization, and explanation.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">AI Research Agent &amp; Literature Review Generator</h3>
+            <p class="entry-date">Cobbs Creek Healthcare</p>
+          </div>
+          <p class="entry-org">Python, LangChain, Streamlit, Snowflake, AWS EC2</p>
+          <ul>
+            <li>
+              Developed a multi-agent LLM platform for end-to-end literature review workflows
+              including screening, extraction, quality assessment, and report generation.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Net-Zero Data Public Utility (NZDPU) Platform</h3>
+            <p class="entry-date">Insomniac Design</p>
+          </div>
+          <p class="entry-org">Python, GCP, PostgreSQL, FastAPI</p>
+          <ul>
+            <li>
+              Implemented backend architecture, custom user and file systems, and optimized SQL
+              for 2M+ emissions records while reducing latency and automating workflows.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <p>
+          <strong>Core Skills:</strong> AI/LLM systems, multi-agent workflows, data engineering,
+          full-stack development, cloud analytics
+        </p>
+        <p>
+          <strong>Languages &amp; Tools:</strong> Java, C/C++, Python, TypeScript, SQL,
+          JavaScript, AWS, GCP, Snowflake, FastAPI, React, Streamlit, LangChain
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
